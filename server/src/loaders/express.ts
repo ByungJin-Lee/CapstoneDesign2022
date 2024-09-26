@@ -36,4 +36,6 @@ export default ({ app }: { app: express.Application }) => {
   app.use(booleanHandler as any);
   app.use(router);
   //about router
+
+  app.set('trust proxy',true);
 };
